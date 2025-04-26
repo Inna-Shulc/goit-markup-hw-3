@@ -34,6 +34,9 @@ body {
     text-transform: uppercase;
     color: #2e2f42;
 }
+.header-container {
+    padding: 1440px 0;
+}
 
 .nav-link:hover {
     color: #404bbf;
