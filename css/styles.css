@@ -3,20 +3,17 @@ body {
     color: #434455;
     background-color: #ffffff;
 }
-.header-container {
-display: flex;
+
+  .header-container {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     max-width: 1440px;
-    height: 72px;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
-    gap: 48px 24px;
-    list-style: none;
-    align-items: center;
-}
-    
+
+  }
 .header-logo {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
@@ -98,10 +95,10 @@ display: flex;
 
 }
 
+   
 .section-one {
     background-color: #2e2f42;
-
-}
+   }
 
 .section-one-name {
     font-family: "Roboto", sans-serif;
@@ -111,7 +108,10 @@ display: flex;
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-
+    display: flex;
+    justify-content: center;
+padding: auto;
+margin: 0;
 
 }
 
@@ -125,6 +125,8 @@ display: flex;
 
     color: #ffffff;
     background-color: #4D5AE5;
+    align-items: center;
+    
 
 
 }
