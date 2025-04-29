@@ -3,16 +3,20 @@ body {
     color: #434455;
     background-color: #ffffff;
 }
-
-  .header-container {
-    display: flex;
-    width: 1158px;
-    margin: 0 auto;
+.container {
+    max-width: 1158px;
     padding: 0 15px;
+    margin: 0 auto;
+
+}
+.header-container {
+    display: flex;
+   align-items: center;
 }
 .header {
 border-bottom: 1px solid #e7e9fc;
 }
+
   .header-nav{
     display: flex;
     align-items: center;
@@ -27,6 +31,7 @@ border-bottom: 1px solid #e7e9fc;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    padding: 24px 0;
     margin-right: 76px;
    
 }
@@ -59,8 +64,9 @@ border-bottom: 1px solid #e7e9fc;
 .nav-link:focus {
     color: #404bbf;
 }
-.nav-item {
+.nav-list {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -71,7 +77,7 @@ border-bottom: 1px solid #e7e9fc;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     gap: 40px;
     margin-right: 40px;
@@ -83,12 +89,11 @@ border-bottom: 1px solid #e7e9fc;
 .address {
     font-style: normal;
     color: #434455;
+    margin-left: auto;
 }
 
 .contacts-link {
     color: #434455;
-  
- 
 }
 
 .contacts-link:hover {
@@ -98,6 +103,10 @@ border-bottom: 1px solid #e7e9fc;
 
 .contacts-link:focus {
     color: #404bbf;
+}
+.contacts {
+    display: flex;
+    align-items: center;
 }
 
 .contacts-item {
@@ -109,8 +118,8 @@ border-bottom: 1px solid #e7e9fc;
     color: #434455;
     display: flex;
     align-items: center;
-        gap: 40px;
-        margin-right: 0;
+    
+     margin-right: 40px;
 
 }
 
@@ -129,9 +138,9 @@ border-bottom: 1px solid #e7e9fc;
     text-align: center;
     color: #ffffff;
     display: flex;
-    justify-content: center;
-    padding: auto;
-    margin: 0;
+    align-items: center;
+      padding: auto;
+    margin: auto;
     max-width: 496px;
 }
 
@@ -159,22 +168,29 @@ border-bottom: 1px solid #e7e9fc;
 .button-name:focus {
     background-color: #404BBF;
 }
-
+.pattern {
+    visibility: hidden;
+}
 .section-two-list {
     background-color: #FFFFFF;
-display: flex;
+    display: flex;
     gap: 24px;
-    justify-content: center;
     align-items: center;
-   
-    }
+
+}
+
 
 .section-two {
     padding: 120px 0;
+
+    
 }
 .section-two-item {
-    width: calc((100% - 72px) / 4);
+width: calc((100% - 72px) / 4); 
+align-items: center;
 }
+   
+
 .section-two-title {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -192,8 +208,11 @@ display: flex;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
-}
 
+}
+.img {
+    display: block;
+}
 .section-three {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -216,7 +235,7 @@ display: flex;
     background-color: #ffffff;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-display: block;
+
 }
 
 .three-container {
@@ -231,7 +250,7 @@ display: block;
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 72px;
 }
 
 .section-three-title {
@@ -242,6 +261,7 @@ display: block;
     letter-spacing: 0.02em;
      color: #2E2F42;
      text-align: center;
+     margin-bottom: 8px;
 }
 
 .section-three-text {
@@ -261,6 +281,7 @@ display: block;
 }.section-four-item {
     width: calc((100% - 48px) / 3);
     display: block;
+
 }
 .section-four-container {
     padding: 32px 16px;
@@ -271,8 +292,7 @@ display: block;
 .section-four-list {
     display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 24px;
+       column-gap: 24px;
         row-gap: 48px;
         flex-direction: row;
         max-width: 1440px;
@@ -282,10 +302,8 @@ display: block;
         gap: 24px;
         list-style: none;
         align-items: center;
-        
-  
-    
-}
+        }
+
 .section-four-name {
     font-size: 36px;
     line-height: 1.11;
@@ -294,9 +312,15 @@ display: block;
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
+
+    
+}
+.four-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
     margin-bottom: 8px;
 }
-
 .section-four-title {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
