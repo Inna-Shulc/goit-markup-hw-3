@@ -6,12 +6,16 @@ body {
 
   .header-container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1440px;
-    padding: 0;
-    margin: 0;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+border-bottom: 1px solid #e7e9fc;
+}
+  .header-nav{
+    display: flex;
+    align-items: center;
 
   }
 .header-logo {
@@ -23,6 +27,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-right: 76px;
    
 }
 
@@ -54,6 +59,10 @@ body {
 .nav-link:focus {
     color: #404bbf;
 }
+.nav-item {
+    display: flex;
+    gap: 40px;
+}
 
 .nav-link {
     font-family: "Roboto", sans-serif;
@@ -62,6 +71,11 @@ body {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-right: 40px;
+    padding: 24px 0;
    
 
 }
@@ -73,6 +87,7 @@ body {
 
 .contacts-link {
     color: #434455;
+  
  
 }
 
@@ -92,12 +107,17 @@ body {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
+    display: flex;
+    align-items: center;
+        gap: 40px;
+        margin-right: 0;
 
 }
 
    
 .section-one {
     background-color: #2e2f42;
+    padding: 188px 0;
    }
 
 .section-one-name {
@@ -110,9 +130,9 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
-padding: auto;
-margin: 0;
-
+    padding: auto;
+    margin: 0;
+    max-width: 496px;
 }
 
 .button-name {
@@ -122,13 +142,14 @@ margin: 0;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-
-    color: #ffffff;
-    background-color: #4D5AE5;
+     color: #ffffff;
+    background-color: #4d5ae5;
     align-items: center;
-    
-
-
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .button-name:hover {
@@ -145,19 +166,23 @@ display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
-    
+   
     }
 
-
-
+.section-two {
+    padding: 120px 0;
+}
+.section-two-item {
+    width: calc((100% - 72px) / 4);
+}
 .section-two-title {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
-
-    color: #2E2F42;
+     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .section-two-text {
@@ -171,6 +196,7 @@ display: flex;
 
 .section-three {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 .section-three-list {
     display: flex;
@@ -188,18 +214,24 @@ display: flex;
 
 .section-three-item {
     background-color: #ffffff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+display: block;
 }
 
+.three-container {
+    padding: 32px 0
+}
 .section-three-name {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
-
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .section-three-title {
@@ -208,8 +240,8 @@ display: flex;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
-
-    color: #2E2F42;
+     color: #2E2F42;
+     text-align: center;
 }
 
 .section-three-text {
@@ -220,11 +252,28 @@ display: flex;
     letter-spacing: 0.02em;
     background-color: #FFFFFF;
     color: #434455;
+    text-align: center;
+}
+.section-four {
+    padding-top: 120px;
+        padding-bottom: 120px;
+
+}.section-four-item {
+    width: calc((100% - 48px) / 3);
+    display: block;
+}
+.section-four-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
 }
 .section-four-list {
     display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        column-gap: 24px;
+        row-gap: 48px;
         flex-direction: row;
         max-width: 1440px;
         height: 732px;
@@ -233,6 +282,7 @@ display: flex;
         gap: 24px;
         list-style: none;
         align-items: center;
+        
   
     
 }
@@ -243,6 +293,8 @@ display: flex;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+    margin-bottom: 8px;
 }
 
 .section-four-title {
@@ -275,12 +327,18 @@ display: flex;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-studio {
     color: #f4f4fd;
 }
 
+.footer {
+    padding: 100px 0;
+
+}
 .footer-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -288,4 +346,5 @@ display: flex;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    max-width: 264px;
 }
