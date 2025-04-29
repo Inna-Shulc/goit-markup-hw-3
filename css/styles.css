@@ -79,11 +79,13 @@ border-bottom: 1px solid #e7e9fc;
     color: #2e2f42;
     display: block;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-right: 40px;
+   margin-right: 40px;
     padding: 24px 0;
    
 
+}
+.img {
+    display: block;
 }
 
 .address {
@@ -169,23 +171,21 @@ border-bottom: 1px solid #e7e9fc;
     background-color: #404BBF;
 }
 .pattern {
-    visibility: hidden;
+visibility: hidden;
 }
 .section-two-list {
     background-color: #FFFFFF;
-    display: flex;
+display: flex;
     gap: 24px;
-    align-items: center;
-
+  
 }
-
 
 .section-two {
     padding: 120px 0;
-
-    
 }
+
 .section-two-item {
+
 width: calc((100% - 72px) / 4); 
 align-items: center;
 }
@@ -222,13 +222,12 @@ align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    max-width: 1440px;
-    height: 732px;
     padding-left: 0;
-    margin: 0;
+      margin: 0;
     gap: 24px;
     list-style: none;
     align-items: center;
+    row-gap: 48px;
 }
 
 .section-three-item {
@@ -273,12 +272,14 @@ align-items: center;
     background-color: #FFFFFF;
     color: #434455;
     text-align: center;
+
 }
 .section-four {
     padding-top: 120px;
         padding-bottom: 120px;
 
-}.section-four-item {
+}
+.section-four-item {
     width: calc((100% - 48px) / 3);
     display: block;
 
@@ -295,13 +296,13 @@ align-items: center;
        column-gap: 24px;
         row-gap: 48px;
         flex-direction: row;
-        max-width: 1440px;
-        height: 732px;
-        padding-left: 0;
-        margin: 0;
+        max-width: 1128px;
+        height: 1000px;
+     margin: 0;
         gap: 24px;
         list-style: none;
         align-items: center;
+       
         }
 
 .section-four-name {
@@ -312,8 +313,6 @@ align-items: center;
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
-
-    
 }
 .four-container {
     padding: 32px 16px;
