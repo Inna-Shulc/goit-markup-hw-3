@@ -323,8 +323,7 @@ align-items: center;
    .section-four-item {
        width: calc((100% - 48px) / 3);
        display: block;
-
-   }
+}
 
 .section-four-name {
     font-size: 36px;
